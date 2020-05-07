@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="estilos.css">
+	<script src="validar.js"> </script>
+	
+
+</head>  
+<body>
+
+    <form action="loginvista.html" method="post"  class="formulario" onsubmit="return validar();">
+    
+    <h1>Formulario de Registro</h1>
+     <div class="contenedor">
+     
+     	
+          <div class="input-contenedor">
+         <i class="far fa-address-card"></i>
+         <input type="text" id="nombre" name="nombre" placeholder="Nombre"  min="3" maxlength="25" pattern="[A-Z,a-z,ñ,Ñ]+">
+         </div>
+
+          <div class="input-contenedor">
+         <i class="far fa-address-card"></i>
+         <input type="text" id="apellido" name="apellido" placeholder="Apellido"  min="3" maxlength="25" pattern="[A-Z,a-z,ñ,Ñ]+">
+         </div>
+		
+					
+		
+                         <div class="col-md-3 ">
+                           
+                        <select name="id" class="form-control" required=""  >
+                        <option value="" > </option>
+                        <option value="1">V-</option>
+                        <option value="2">P-</option>
+                        <option value="3">E-</option>
+                        
+                        </select> 
+                        </div>
+
+                        <div class="col-md-8"    style="width: 60%;float: left;" >
+         <div class="input-contenedor"  >
+         <i class="far fa-address-card"></i>
+         <input type="text" id="cedula" name="cedula" 	placeholder="cedula"  min="7" maxlength="8">
+         </div>
+     					</div> 
+
+       
+			
+		<div class="input-contenedor " style="margin-top: 80px;">
+         <i class="far fa-address-card"></i>
+         <input type="text" id="telefono" name="telefono" 	placeholder="0424-729-1747"  min="11" maxlength="14"  >
+         </div>
+
+         <div class="input-contenedor">
+         <i class="far fa-envelope icon"></i>
+         <input type="text" id="correo" name="correo" 	placeholder="Correo Electronico" maxlength="35"   pattern="[A-Z,a-z,0-9,.,*,@,_,-,ñ,Ñ]+" >
+
+
+         </div>
+         
+         <div class="text-center" >
+			 <p>Sexo:
+         <input type="radio" name="hm" value="h"> Hombre
+         <input type="radio" name="hm" value="m"> Mujer
+         <input type="radio" name="hm" value="n"> Ninguno
+			</div>
+
+		<div style="text-align: center;">
+         <input type="reset" value="Limpiar" class="button"  >
+         <input type="submit" value="Guardar" class="button" ></div>
+
+
+
+         </div>
+    </form>      <br><br><br>
+
+
+</body>
+</html>
